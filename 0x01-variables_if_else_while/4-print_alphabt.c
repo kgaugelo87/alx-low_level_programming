@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <ctype.h>
-
 /**
  * main -function to display both lower and upper case letters
  *
@@ -23,6 +22,6 @@ int main(void)
 			lower += 1;
 		}
 		putchar('\n');
-		return (0);
 	}
+	return (0);
 }
