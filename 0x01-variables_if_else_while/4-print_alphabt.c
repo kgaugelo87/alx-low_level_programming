@@ -9,7 +9,7 @@
 int main(void)
 {
 	char lower = 'a';
-	
+
 	while (lower <= 'z')
 	{
 		if (lower == 'e' || lower == 'q')
@@ -21,7 +21,7 @@ int main(void)
 			putchar(lower);
 			lower += 1;
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
