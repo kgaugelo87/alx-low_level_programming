@@ -10,7 +10,7 @@
 int main(void)
 {
 	int n;
-	int modus;
+	char modus;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -18,10 +18,10 @@ int main(void)
 
 	if (modus > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, modus);
+		printf("Last digit of %d is %d and is greater than 5\n",n, modus);
 	} else if (modus > 0 && modus != 0)
 	{
-		printf("Last digit of %d is %d and is less that 6 and not 0\n", n, modus);
+		printf("Last digit of %d is %d and is less that 6 and not 0\n",n, modus);
 	} else
 	{
 		printf("Last digit of %d is 0\n", n);
