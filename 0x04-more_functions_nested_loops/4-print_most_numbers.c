@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - display numbers from 0 to 9 except for 2 and 4
  *
- * Return: Always return the value of (0)
+ * Return: Always void
  *
  */
 void print_most_numbers(void)
@@ -12,7 +12,7 @@ void print_most_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		if (!(c == '2') || (c == '4'))
+		if (!(c == '2' || c == '4'))
 		{
 			_putchar(c);
 		}
