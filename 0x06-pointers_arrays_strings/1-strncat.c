@@ -1,7 +1,7 @@
-#include "main.h
+#include "main.h"
 
 /**
- * _strcat - displays strings concatenated
+ * _strncat - displays strings concatenated
  * @dest: our first string value
  * @src: our second string value
  * @n: another string value
