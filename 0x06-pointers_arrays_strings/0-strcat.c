@@ -1,4 +1,4 @@
-#include "main.h
+#include "main.h"
 
 /**
  * _strcat - displays strings concatenated
