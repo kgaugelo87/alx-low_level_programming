@@ -6,9 +6,9 @@
 
 /**
  * _puts - prints a string, followed by a new line, to stdout
- * @str: string to print
+ * @s: string to print
  */
 void _puts(char *s)
 {
-    puts(s);
+	puts(s);
 }
