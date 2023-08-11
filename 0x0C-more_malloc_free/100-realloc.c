@@ -9,6 +9,7 @@
  * @ptr: memory previously allocated
  * Return: newly allocated space, range from start of ptr up to the minimum of old and new sizes
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *new_ptr;
