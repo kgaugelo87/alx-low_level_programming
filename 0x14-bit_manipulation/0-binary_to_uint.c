@@ -20,5 +20,6 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		con_num = 2 * con_num + (b[bin_num] - '0');
 	}
+
 	return (con_num);
 }
