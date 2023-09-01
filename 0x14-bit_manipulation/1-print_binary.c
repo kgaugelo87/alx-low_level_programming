@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <unistd.h>
 
 /**
  * print_binary - prints the binary equivalent of a decimal number
@@ -16,6 +14,7 @@ void print_binary(unsigned long int n)
 	for (x = 63; x >= 0; x--)
 	{
 		cur_num = n >> x;
+		
 		if (cur_num & 1)
 		{
 			_putchar('1');
