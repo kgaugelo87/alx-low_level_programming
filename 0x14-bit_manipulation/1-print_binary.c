@@ -8,26 +8,23 @@
  */
 void print_binary(unsigned long int n)
 {
-	int x, bin_num = 0;
-	unsigned long int cur_num;
+	int x = sizeof(n) * 8;
+	int y = 0;
 
-	for (x = 63; x >= 0; x--)
+	while (x)
 	{
-		cur_num = n >> x;
-		
-		if (cur_num & 1)
+		if (n & 1L << --x)
 		{
 			_putchar('1');
-			bin_num++;
+			y++;
 		}
-		else if (bin_num)
+		else if (y)
 		{
 			_putchar('0');
 		}
 	}
-	if (!bin_num)
+	if (!y)
 	{
 		_putchar('0');
-
 	}
 }
