@@ -11,7 +11,7 @@
  * if it fails to write on our text file
  */
 
-ssize_t read_textfile(const char *filename, ssize_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
 	ssize_t fid;
