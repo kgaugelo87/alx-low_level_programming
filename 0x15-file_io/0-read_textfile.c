@@ -1,6 +1,7 @@
-#include <main.h>
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 
 /**
  * read_textfile- a function that reads a text file and prints
@@ -10,7 +11,7 @@
  * if it fails to write on our text file
  */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, ssize_t letters)
 {
 	char *buffer;
 	ssize_t fid;
@@ -22,8 +23,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	buffer = malloc(sizeof(char) * letters);
-	rd = fread(fid, buffer, letters;
-	wrt = fwrite(STDOUT_FILENO, buffer, rd);
+	rd = read(fid, buffer, letters);
+	wrt = write(STDOUT_FILENO, buffer, rd);
 
 	free(buffer);
 	close(fid);
