@@ -24,14 +24,14 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	fid = open(filename, O_CREAT | O_RDWR | O_TRUNC);
-	wrt = write(fid, text_context, length);
+	wrt = write(fid, text_content, length);
 
-	if (rid == -1)
+	if (fid == -1)
 		return (-1);
 
 	if (wrt == -1)
 		return (-1);
 
-	close(rid);
+	close(fid);
 	return (1);
 }
