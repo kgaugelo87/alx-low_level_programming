@@ -26,10 +26,7 @@ int create_file(const char *filename, char *text_content)
 	fid = open(filename, O_CREAT | O_RDWR | O_TRUNC);
 	wrt = write(fid, text_content, length);
 
-	if (fid == -1)
-		return (-1);
-
-	if (wrt == -1)
+	if (fid == -1 || wrt == -1)
 		return (-1);
 
 	close(fid);
