@@ -7,11 +7,9 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	/** declaration of our attributes **/
 	int c;
 	unsigned int value;
 
-	/** Function to convert our number to unsigned int **/
 	value = 0;
 	if (!b)
 		return (0);
