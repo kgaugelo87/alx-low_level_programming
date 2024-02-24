@@ -9,8 +9,10 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
+	/** Declaration of variables **/
 	unsigned long int value;
 
+	/** conditional statement that sets the bit value to 1 if success **/
 	if (index > (sizeof(unsigned long int) * 8 - 1))
 		return (-1);
 	value = 1 << index;
